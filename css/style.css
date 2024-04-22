@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+}
+
+div.container {
+  width: 70rem; /* 컨테이너의 가로 크기를 선정해줌 */
+  height: 30rem; /* 컨테이너의 세로 크기를 선정해줌 */
+  background-color: rgb(150, 224, 253); /*컨테이너의 배경색을 지정*/
+  border-radius: 15px; /*컨테이너의 배경의 테두리를 부드럽게 해줌*/
+}
+input {
+  color: rgb(255, 255, 255);
+  background: #000;
+  font-size: 1.5rem;
+}
+div.ball {
+  width: 100px; /*공들의 고정적인 크기 지정*/
+  height: 100px;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  margin: 1%; /*공들의 간격 조정*/
+  background-color: #000;
+  border-radius: 100%;
+  animation: fadein 0.3s; /* 서서히 생기는 애니메이션 */
+  box-shadow: 7px 7px black; /* 공들의 뒤쪽 배경*/
+}
+div.ballset {
+  display: flex; /* 공들을 정렬 */
+  justify-content: center; /*아이템들을 가운데로 정렬*/
+}
+/* '+'기호에 대한 css */
+div.plus {
+  width: 100px;
+  height: 100px;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  float: left;
+  border-radius: 100%;
+}
+/* 버튼에 대한 css */
+input#buttonId {
+  width: 120px;
+  height: 60px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-radius: 15px;
+}
+/* 점차 밝아지는 애니메이션 추가 */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
